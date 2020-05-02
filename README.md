@@ -5,17 +5,6 @@ The below comes from https://github.com/qqwweee/keras-yolo3
 
 ---
 
-# keras-yolo3
-
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
-
-## Introduction
-
-A Keras implementation of YOLOv3 (Tensorflow backend) inspired by [allanzelener/YAD2K](https://github.com/allanzelener/YAD2K).
-
-
----
-
 ## Quick Start
 
 1. Download YOLOv3 weights from [YOLO website](http://pjreddie.com/darknet/yolo/).
