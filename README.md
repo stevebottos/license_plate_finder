@@ -1,3 +1,10 @@
+# Introduction
+This is an mishmash of stuff based on https://modelzoo.co/model/keras-yolov3, https://github.com/allanzelener/YAD2K, and https://github.com/qqwweee/keras-yolo3. The goal is to use transfer learning to train yolo3 to recognize license plates.
+
+The below comes from https://github.com/qqwweee/keras-yolo3
+
+---
+
 # keras-yolo3
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
