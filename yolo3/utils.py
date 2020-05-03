@@ -33,6 +33,23 @@ def letterbox_image(image, size):
 def rand(a=0, b=1):
     return np.random.rand()*(b-a) + a
 
+def resize_image(image, size):
+    iw, ih = image.size
+    h, w = size
+    scale = min(w/iw, h/ih)
+    nw = int(iw*scale)
+    nh = int(ih*scale)
+    dx = (w-nw)//2
+    dy = (h-nh)//2
+    image_data=0
+    image = image.resize((nw,nh), Image.BICUBIC)
+    new_image = Image.new('RGB', (w,h), (128,128,128))
+    new_image.paste(image, (dx, dy))
+    image_data = np.array(new_image)/255.
+
+    return image_data
+
+
 def get_random_data(annotation_line, input_shape, random=True, max_boxes=20, jitter=.3, hue=.1, sat=1.5, val=1.5, proc_img=True):
     '''random preprocessing for real-time data augmentation'''
     line = annotation_line.split()

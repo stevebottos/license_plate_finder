@@ -2,10 +2,10 @@ import pandas as pd
 import ast
 import os
 
-images = pd.read_csv("vehicles/batch1_formatted.csv")
-img_path = "vehicles/batch1/"
+images = pd.read_csv("vehicles/batch1_formatted_og.csv")
+img_path = "vehicles/batch1_og/"
 
-with open('train.txt', 'w') as trainfile:
+with open('train_og.txt', 'w') as trainfile:
     for _, im in images.iterrows():
         write_str = ""
 
